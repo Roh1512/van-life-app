@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Vans from "./pages/Vans/Vans";
 import VanDetail from "./pages/Vans/VanDetail";
+import NotFound from "./pages/NotFound";
 
 import Layout from "./components/Layout";
 import HostLayout from "./components/HostLayout";
@@ -25,6 +26,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
+            <Route path="*" element={<NotFound />} />
             <Route index element={<Home />} />
 
             <Route path="host" element={<HostLayout />}>

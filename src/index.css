@@ -56,12 +56,6 @@ header a:hover {
   color: #161616;
   text-decoration: underline;
 }
-/*Added by me*/
-.active-link {
-  color: #161616;
-  text-decoration: underline;
-  font-weight: bold;
-}
 
 header button {
   cursor: pointer;
@@ -83,7 +77,6 @@ nav {
 
 main {
   margin-bottom: 84px;
-  min-height: 80vh;
 }
 
 footer {
@@ -96,7 +89,6 @@ footer {
   align-items: center;
   margin-top: auto;
   font-weight: 500;
-  margin-bottom: auto;
 }
 
 .link-button {
