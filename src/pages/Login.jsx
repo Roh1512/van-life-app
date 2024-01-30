@@ -4,6 +4,7 @@ import {
   Form,
   redirect,
   useNavigation,
+  useNavigate,
 } from "react-router-dom";
 import { loginUser } from "../api";
 
@@ -32,10 +33,11 @@ function Login() {
   const message = useLoaderData();
   const error = useActionData();
   const navigation = useNavigation();
+  const navigate = useNavigate();
 
   function fakeLogOut() {
     localStorage.removeItem("loggedin");
-    window.location.reload();
+    navigate("/login");
   }
 
   return (
